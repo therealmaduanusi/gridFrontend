@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Imperial+Script&family=Lexend+Deca:wght@100&family=Poppins:wght@200&family=Vujahday+Script&display=swap');
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html,body{
+      font-size: 15px;
+      font-weight: 400;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .container-wrapper{
+      margin: 70px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 60%;
+    }
+    @media(max-width: 985px){
+      .container{
+        width: 70%;
+      }
+      .text{
+        width: 70%;
+      }
+    }
+    @media(max-width: 750px){
+      .container{
+        width: 70%;
+        grid-template-columns: 1fr 1fr;
+      }
+      .text{
+        width: 70%;
+      }
+    }
+    @media(max-width: 375px){
+      .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+      }
+      .grid1{
+        background-color: hsl(31, 77%, 52%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: none;
+      }
+      .grid2{
+        background-color: hsl(184, 100%, 22%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+      }
+      .grid3{
+        background-color: hsl(179, 100%, 13%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    /* .grid-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+    @media(min-width: 400px){
+      .grid1{
+        background-color: hsl(31, 77%, 52%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .grid2{
+        background-color: hsl(184, 100%, 22%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+
+      }
+      .grid3{
+        background-color: hsl(179, 100%, 13%);
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-left: 30px;
+        padding-top: 20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    
+    .logos{
+      line-height: 100px;
+    }
+    .sedans,
+    .suvs,
+    .luxury{
+      color: hsl(0, 0%, 95%);
+    }
+    .text{
+      width: 80%;
+      margin-top: 40px;
+    }
+    .learn-more{
+      margin-top: 70px;
+      border: none;
+      margin-bottom: 40px;
+      background-color: hsl(0, 0%, 95%);
+      border-radius: 40px;
+      text-align: center;
+      width: 120px;
+      height: 40px;
+      transition: background .5s ease-in-out;
+    }
+    .learn-more:hover{
+      background-color: transparent;
+      border: 2px solid hsl(0, 0%, 95%);
+      color: hsl(0, 0%, 95%);
+    }
